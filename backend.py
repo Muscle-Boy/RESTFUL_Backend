@@ -2,7 +2,7 @@ from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
-@app.route('/backend', methods=['POST'])
+@app.route('/', methods=['POST'])
 def backend():
     text = request.form['texts']
     return text
