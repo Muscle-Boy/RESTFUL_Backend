@@ -7,5 +7,5 @@ spec:
     app: backend-server
   ports:
     - protocol: TCP
-      port: 8010      # Use port 80 to connect with INGRESS!
+      port: 5010      
       targetPort: 8010
