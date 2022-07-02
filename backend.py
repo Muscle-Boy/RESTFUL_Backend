@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 def backend():
-    text = request.form['texts']
+#     text = request.form['texts']
+    text = '3'
     return text
 
 if __name__ == "__main__":
