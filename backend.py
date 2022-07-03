@@ -4,8 +4,6 @@ app = Flask(__name__)
 
 @app.route('/', methods=['POST', 'GET'])
 def backend():
-#     text = request.form['texts']
-#     text = '3'
     if request.is_json:
         data = request.get_json()
         text = data['data']
